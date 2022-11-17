@@ -1,6 +1,6 @@
 package binarysearch;
 
-public class SearchMountainArray {
+public class SearchPeakInMountainArray {
 
     public static void main(String[] args) {
         int[] mountainArr = new int[]{1,2,3,4,5,6,7,8,7,6,3,2,1};
@@ -18,6 +18,6 @@ public class SearchMountainArray {
                 start = mid + 1;
             }
         }
-        return  start;
+        return  start;//return start or end as both are same
     }
 }
