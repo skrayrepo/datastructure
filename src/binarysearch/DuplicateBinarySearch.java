@@ -3,7 +3,7 @@ package binarysearch;
 public class DuplicateBinarySearch {
 
     public static void main(String[] args) {
-        int[] arr = {2,2,3,4,5,6,6,7};
+        int[] arr = {2,2,3,4,5,6,6,6,7};
         int target = 2;
         int result = searchTargetInDuplicateArray(arr,target);
         System.out.println(result);
