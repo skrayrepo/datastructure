@@ -3,11 +3,11 @@ package binarysearch;
 public class SearchPeakInMountainArray {
 
     public static void main(String[] args) {
-        int[] mountainArr = new int[]{1,2,3,4,5,6,7,8,7,6,3,2,1};
-        int result = binarySearch(mountainArr);
+        int[] mountainArr = new int[]{2,2,6,8,4,1};
+        int result = searchForPeak(mountainArr);
         System.out.println(result);
     }
-    static int binarySearch(int[] mountainArr){
+    static int searchForPeak(int[] mountainArr){
         int start = 0;
         int end = mountainArr.length - 1;
         while(start < end){
