@@ -4,11 +4,11 @@ import java.util.Arrays;
 
 public class CyclicSorting {
     public static void main(String[] args) {
-        int[] arr = {5,3,1,2,4,6};
+        int[] arr = {5,3,1,2,4,6,-1};
         int i = 0;
         while(i < arr.length){
             int correctIndex = arr[i]-1;
-            if(arr[i] != arr[correctIndex]){
+            if(arr[i] > 0 && arr[i] != arr[correctIndex]){ //Ignoring negative numbers
                 swap(arr,i,correctIndex);
             }else {
                 i++;
