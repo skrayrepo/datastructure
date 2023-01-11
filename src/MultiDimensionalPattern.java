@@ -13,6 +13,8 @@ public class MultiDimensionalPattern {
         pattern4(n);
         System.out.println("---------Pattrn 5------------");
         pattern5(n);
+        System.out.println("---------Pattrn 6------------");
+        pattern6(n);
     }
 
     private static void pattern1(int n) {
@@ -74,5 +76,14 @@ public class MultiDimensionalPattern {
             System.out.println();
         }
 
+    }
+
+    private static void pattern6(int n){
+        for (int row = 0; row < n; row++) {
+            for (int col = 0; col < n - row; col++) {
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
     }
 }
