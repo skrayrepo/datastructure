@@ -15,8 +15,6 @@ public class InsertionSorting {
             for(int j=i+1; j>0; j--){
                 if(arr[j] < arr[j-1]){
                     swap(arr,j,j-1);
-                }else{
-                    break;
                 }
             }
         }
