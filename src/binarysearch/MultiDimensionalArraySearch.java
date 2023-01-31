@@ -10,9 +10,10 @@ public class MultiDimensionalArraySearch {
                 {50,60,70,80},
                 {90,100,110,120}
         };
-        int target = 30;
+        int target = 120;
         int[] result = search(multiArr,target);
         System.out.println("Result found in:"+ Arrays.toString(result));
+        simpleSearch(multiArr,target);
     }
 
     private static int[] search(int[][] multiArr, int target) {
@@ -30,5 +31,15 @@ public class MultiDimensionalArraySearch {
             }
         }
         return new int[]{-1,-1};
+    }
+
+    private static void simpleSearch(int[][] multiArr, int target) {
+        for (int row = 0; row < multiArr.length; row++) {
+            for (int col = 0; col < multiArr[row].length; col++) {
+                if(target == multiArr[row][col]){
+                    System.out.println("row="+row+","+"col="+col);
+                }
+            }
+        }
     }
 }

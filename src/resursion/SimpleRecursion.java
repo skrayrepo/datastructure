@@ -10,7 +10,7 @@ public class SimpleRecursion {
         if (num == 0) {
             return;
         }
-        System.out.println("Recursion number:"+num);
+        System.out.println("Recursion number before:"+num);
         fun1(num-1);
         System.out.println("Recursion number:"+num);
     }
