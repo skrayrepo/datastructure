@@ -20,7 +20,7 @@ public class MainClass {
         System.out.println("LinedHashset Result="+linkedHashset);
 
        // NavigableSet<Object> treeSet = new TreeSet<>().descendingSet();
-        SortedSet<String> treeSet = new TreeSet<>();//Removed duplicated entries and inserted in sorted manner(ascending)
+        SortedSet<String> treeSet = new TreeSet<>(Comparator.reverseOrder());//Removed duplicated entries and inserted in sorted manner(ascending)
         treeSet.add("Santosh");
         treeSet.add("Rinku");
         treeSet.add("Ajay");
