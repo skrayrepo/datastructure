@@ -2,7 +2,7 @@ package resursion.maze;
 
 public class Maze {
     public static void main(String[] args) {
-        int count = count(4,3);
+        int count = count(3,3);
         //Find the number of way to traverse the maze
         System.out.println(count);
         //find the path to traverse the maze

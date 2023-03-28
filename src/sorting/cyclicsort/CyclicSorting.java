@@ -1,7 +1,7 @@
 package sorting.cyclicsort;
 
 import java.util.Arrays;
-
+//Find out the correct index od sorted array.Cyclic sort always works on 1 to N numbers
 public class CyclicSorting {
     public static void main(String[] args) {
         int[] arr = {5,3,1,2,4,6,-1};

@@ -1,7 +1,11 @@
 package sorting.cyclicsort;
 
+import java.net.Socket;
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class FindDuplicateAndMissingNumber {
 
@@ -11,6 +15,7 @@ public class FindDuplicateAndMissingNumber {
         System.out.println("Sorted array value "+ Arrays.toString(arr));
         ArrayList<Integer> duplicateNums = findDuplicateAndMissingNumbers(arr);
         System.out.println("Duplicate and Misssing Number in array "+ Arrays.toString(duplicateNums.toArray()));
+        findDuplicate(arr);
     }
     private static ArrayList<Integer> findDuplicateAndMissingNumbers(int[] arr) {
         ArrayList<Integer> duplicateNumbers = new ArrayList<Integer>();
@@ -40,5 +45,14 @@ public class FindDuplicateAndMissingNumber {
         int temp = arr[correctIndex];
         arr[correctIndex] = arr[i];
         arr[i] = temp;
+    }
+
+    private static void findDuplicate(int[] arr){
+        Set<Integer> hashSet =  new HashSet<>();
+        for (int i = 0; i < arr.length; i++) {
+            if(!hashSet.add(arr[i])){
+                System.out.println("duplicate number is "+ arr[i]);
+            }
+        }
     }
 }

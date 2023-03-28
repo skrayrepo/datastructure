@@ -16,6 +16,7 @@ public class FirstAndLastInSortedArray {
         System.out.println(Arrays.toString(result));
     }
 
+
     public static int SearchBinary(int[] arr, int target,boolean startPosition){
         int start = 0;
         int end = arr.length -1;
@@ -37,4 +38,6 @@ public class FirstAndLastInSortedArray {
         }
         return result;
     }
+
+
 }

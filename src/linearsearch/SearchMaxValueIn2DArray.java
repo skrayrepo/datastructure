@@ -17,7 +17,7 @@ public class SearchMaxValueIn2DArray {
     }
 
     public static void searchLargestElement(int[][] twoDimArray){
-        int maxValue = Integer.MIN_VALUE;
+        int maxValue = twoDimArray[0][0];
         for (int i = 0; i < twoDimArray.length; i++) {
             for (int j = 0; j < twoDimArray[i].length ; j++) {
                 if(twoDimArray[i][j] > maxValue){

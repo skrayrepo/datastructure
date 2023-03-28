@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class FindMissingNumber {
 
     public static void main(String[] args) {
-        int[] arr = {3,2,0,1};
+        int[] arr = {3,7,1,2,8,4,5};
         //Convert the array in sorted order
         cyclicSort(arr);
         System.out.println("Sorted array"+ Arrays.toString(arr));
@@ -25,8 +25,13 @@ public class FindMissingNumber {
     private static void cyclicSort(int[] arr) {
         int i = 0;
         while(i < arr.length){
-            if(arr[i] < arr.length && arr[i] != i){
-                swap(arr,i,arr[i]);
+            int originalIndex = arr[i] - 1;
+            if(arr[i] != arr[originalIndex]){
+                swap(arr,originalIndex,i);
+                if(arr[i] != originalIndex){
+                    System.out.println(originalIndex);
+                    return;
+                }
             }else{
                 i++;
             }

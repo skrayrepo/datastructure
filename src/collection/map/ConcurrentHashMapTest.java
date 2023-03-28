@@ -42,9 +42,9 @@ public class ConcurrentHashMapTest {
             String key = (String)it.next();
             if(key.equals("San")){
                 hashMap.put("Tap",90);
-                //it.remove();
+                it.remove();
                 //Below code throw ConcurrentModificationException
-                hashMap.remove(key);
+                //hashMap.remove(key);
             }
         }
         System.out.println(hashMap);

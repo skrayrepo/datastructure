@@ -4,7 +4,7 @@ public class FibonaciValue {
 
     //find the fibonacci number at 7
     public static void main(String[] args) {
-        int n = 15;
+        int n = 4;
         int result = fibo(n);
         System.out.println("FIbonacci number will be "+result);
     }

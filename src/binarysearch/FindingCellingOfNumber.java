@@ -4,7 +4,7 @@ public class FindingCellingOfNumber {
 
     public static void main(String[] args) {
         int[] arr = new int[]{5,8,15,17,19,23};
-        int target = 20;
+        int target = 16;
         //To find out the celling of target number
         //Celling number would be greater than equal to target number
         int cellingIndex = cellingBinarySearch(arr,target);

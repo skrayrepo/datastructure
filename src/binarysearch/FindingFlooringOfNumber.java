@@ -4,11 +4,11 @@ public class FindingFlooringOfNumber {
 
     public static void main(String[] args) {
         int[] arr = new int[]{5,8,15,17,19,23};
-        int target = 10;
+        int target = 18;
         //To find out the celling of target number
         //Celling number would be greater than equal to target number
         int cellingIndex = flooringBinarySearch(arr,target);
-        System.out.println("Flooring element found in index "+cellingIndex);
+        System.out.println("Flooring element found in index "+arr[cellingIndex]);
     }
 
     public static int flooringBinarySearch(int[] arr,int target){
